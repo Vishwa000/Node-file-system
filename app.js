@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/files', fileRoutes);
+app.use('/', fileRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
